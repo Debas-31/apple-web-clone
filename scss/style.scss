@@ -1,0 +1,89 @@
+$nav-up: #333;
+$nav-down: #000;
+$sec-color: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  .shop {
+    margin-top: 7.2rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: normal;
+
+    a {
+      text-decoration: underline;
+      font-size: 0.8rem;
+      font-weight: normal;
+    }
+  }
+
+  .nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    .nav-up {
+      background-color: $nav-up;
+      display: flex;
+      align-items: center;
+      gap: 0.54rem;
+      padding: 0.8rem 0 0.8rem 4rem;
+      font-size: 0.8rem;
+      font-weight: 300;
+
+      a {
+        color: $sec-color;
+      }
+    }
+
+    .nav-middle {
+      background-color: $nav-down;
+      display: flex;
+      align-items: center;
+      gap: 14rem;
+      padding: 1rem 0 1rem 1.5rem;
+
+      a {
+        color: $sec-color;
+
+        i {
+          width: 24px;
+        }
+
+        img {
+          width: 24px;
+        }
+      }
+    }
+
+    .nav-down {
+      background-color: $nav-down;
+      display: flex;
+      align-items: center;
+      gap: 4.5rem;
+      padding: 1rem 0 1rem 10rem;
+      font-size: 1rem;
+      font-weight: 300;
+      visibility: hidden;
+
+      a {
+        color: $sec-color;
+      }
+    }
+  }
+}

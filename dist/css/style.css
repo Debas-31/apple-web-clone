@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header .shop {
+  margin-top: 7.2rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+.header .shop a {
+  text-decoration: underline;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.header .nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.header .nav .nav-up {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.54rem;
+  padding: 0.8rem 0 0.8rem 4rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.header .nav .nav-up a {
+  color: #fff;
+}
+
+.header .nav .nav-middle {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  gap: 14rem;
+  padding: 1rem 0 1rem 1.5rem;
+}
+
+.header .nav .nav-middle a {
+  color: #fff;
+}
+
+.header .nav .nav-middle a i {
+  width: 24px;
+}
+
+.header .nav .nav-middle a img {
+  width: 24px;
+}
+
+.header .nav .nav-down {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+  padding: 1rem 0 1rem 10rem;
+  font-size: 1rem;
+  font-weight: 300;
+  visibility: hidden;
+}
+
+.header .nav .nav-down a {
+  color: #fff;
+}

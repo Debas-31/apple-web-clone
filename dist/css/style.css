@@ -13,7 +13,7 @@ a {
 }
 
 .header .shop {
-  margin-top: 7.2rem;
+  margin-top: 5.8rem;
   padding: 0.5rem;
   font-size: 0.8rem;
   text-align: center;
@@ -38,7 +38,7 @@ a {
   display: flex;
   align-items: center;
   gap: 0.54rem;
-  padding: 0.8rem 0 0.8rem 4rem;
+  padding: 0.4rem 0 0.4rem 4rem;
   font-size: 0.8rem;
   font-weight: 300;
 }
@@ -52,15 +52,16 @@ a {
   display: flex;
   align-items: center;
   gap: 14rem;
-  padding: 1rem 0 1rem 1.5rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
 }
 
 .header .nav .nav-middle a {
   color: #fff;
 }
 
-.header .nav .nav-middle a i {
-  width: 24px;
+.header .nav .nav-middle a .fa-bars {
+  font-size: 24px;
+  opacity: 0.8;
 }
 
 .header .nav .nav-middle a img {
@@ -72,7 +73,7 @@ a {
   display: flex;
   align-items: center;
   gap: 4.5rem;
-  padding: 1rem 0 1rem 10rem;
+  padding: 0.5rem 0 0.5rem 10rem;
   font-size: 1rem;
   font-weight: 300;
   visibility: hidden;
@@ -80,4 +81,94 @@ a {
 
 .header .nav .nav-down a {
   color: #fff;
+}
+
+.product-section {
+  height: 500px;
+  background-image: url(/asset/heros/hero_bts__bcuslanw39xe_small_2x.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.product-section .product-section-buy {
+  padding-top: 2.7rem;
+}
+
+.product-section .product-section-buy h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.0001em;
+  word-spacing: 0.0001em;
+  padding: 0.4rem 2.2rem;
+  width: 350px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 2.6rem;
+}
+
+.product-section .product-section-buy a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-iphone {
+  height: 500px;
+  background-image: url(/asset/heros/iphone_12_updated__jepm2xpxncuy_small_2x.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.section-iphone .iphone {
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.section-iphone .iphone h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.0001em;
+  word-spacing: 0.0001em;
+  width: 350px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 2rem;
+}
+
+.section-iphone .iphone span {
+  font-size: 1.3rem;
+  font-weight: 200;
+  letter-spacing: normal;
+  padding: 0.8rem 0;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+.section-iphone .iphone p {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  padding: 0.8rem 0.5rem;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  letter-spacing: 0.01em;
+}
+
+.section-iphone .iphone .anchors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.section-iphone .iphone .anchors a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  font-size: 0.9rem;
 }

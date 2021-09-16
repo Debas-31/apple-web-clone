@@ -10,6 +10,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #06c;
 }
 
 .header .shop {
@@ -166,6 +167,69 @@ a {
 }
 
 .section-iphone .iphone .anchors a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  font-size: 0.9rem;
+}
+
+.section-iphone-pro {
+  height: 500px;
+  background-image: url(/asset/heros/iphone_12_pro_us__e5oyysg4k0ya_small_2x.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.section-iphone-pro .iphone-pro {
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.section-iphone-pro .iphone-pro h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.0001em;
+  word-spacing: 0.0001em;
+  width: 350px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 2rem;
+  color: #fff;
+}
+
+.section-iphone-pro .iphone-pro span {
+  font-size: 1.3rem;
+  font-weight: 200;
+  letter-spacing: normal;
+  padding: 0.8rem 0;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  color: #fff;
+}
+
+.section-iphone-pro .iphone-pro p {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-weight: 400;
+  padding: 0.8rem 0.5rem;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  letter-spacing: 0.02em;
+  color: #86868b;
+}
+
+.section-iphone-pro .iphone-pro .anchors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.section-iphone-pro .iphone-pro .anchors a {
   display: flex;
   align-items: center;
   justify-content: center;

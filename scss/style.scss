@@ -1,4 +1,4 @@
-@import'../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
 $nav-up: #333;
 $nav-down: #000;
 $sec-color: #fff;
@@ -20,9 +20,184 @@ a {
   color: $anchor-color;
 }
 
-ul>li{
+ul > li {
   list-style: none;
 }
+
+footer {
+  .copyright-container {
+    display: flex;
+    padding: 1rem 0;
+
+    ul {
+      li {
+        a {
+          color: $nav-up;
+        }
+      }
+    }
+  }
+}
+
+/* Product-Section */
+
+.product-section {
+  height: 500px;
+  background-image: url(/asset/heros/hero_bts__bcuslanw39xe_small_2x.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+
+  .product-section-buy {
+    padding-top: 2.7rem;
+
+    h2 {
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: 0.0001em;
+      word-spacing: 0.0001em;
+      padding: 0.4rem 2.2rem;
+      width: 350px;
+      text-align: center;
+      margin: 0 auto;
+      line-height: 2.6rem;
+    }
+
+    a {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+/* Iphone-pro-section */
+
+.section-iphone-pro {
+  height: 500px;
+  background-image: url(/asset/heros/iphone_12_pro_us__e5oyysg4k0ya_small_2x.jpg);
+  background-position: bottom;
+  background-size: cover;
+
+  .iphone-pro {
+    margin: 0 auto;
+    padding-top: 2rem;
+
+    h2 {
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: 0.0001em;
+      word-spacing: 0.0001em;
+      width: 350px;
+      text-align: center;
+      margin: 0 auto;
+      line-height: 2rem;
+      color: $sec-color;
+    }
+
+    span {
+      font-size: 1.3rem;
+      font-weight: 200;
+      letter-spacing: normal;
+      padding: 0.5rem 0;
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+      color: $sec-color;
+    }
+
+    p {
+      font-size: 0.8rem;
+      line-height: 1rem;
+      font-weight: 400;
+      padding: 0.5rem 0.5rem;
+      text-align: center;
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+      letter-spacing: 0.02em;
+      color: $sec-color-grey;
+    }
+
+    .anchors {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+/* Iphone section */
+
+.section-iphone {
+  height: 500px;
+  background-image: url(/asset/heros/iphone_12_updated__jepm2xpxncuy_small_2x.jpg);
+  background-position: bottom;
+  background-size: cover;
+
+  .iphone {
+    margin: 0 auto;
+    padding-top: 2rem;
+
+    h2 {
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: 0.0001em;
+      word-spacing: 0.0001em;
+      width: 350px;
+      text-align: center;
+      margin: 0 auto;
+      line-height: 2rem;
+    }
+
+    span {
+      font-size: 1.3rem;
+      font-weight: 200;
+      letter-spacing: normal;
+      padding: 0.8rem 0;
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+    }
+
+    p {
+      font-size: 0.8rem;
+      line-height: 1rem;
+      padding: 0.5rem 0.5rem;
+      text-align: center;
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+      letter-spacing: 0.01em;
+    }
+
+    .anchors {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
 /* Header section */
 .header {
   .shop {
@@ -31,12 +206,6 @@ ul>li{
     font-size: 0.8rem;
     text-align: center;
     font-weight: normal;
-
-    a {
-      text-decoration: underline;
-      font-size: 0.8rem;
-      font-weight: normal;
-    }
   }
 
   .nav {
@@ -46,6 +215,7 @@ ul>li{
     width: 100%;
     display: block;
     z-index: 20;
+
     .nav-up {
       background-color: $nav-up;
       display: flex;
@@ -59,23 +229,27 @@ ul>li{
         color: $sec-color;
       }
     }
+
     .nav-down {
       display: flex;
       justify-content: space-between;
       background-color: $nav-down;
       padding: 0.5rem 1.5rem;
-      .nav-logo{
+
+      .nav-logo {
         width: 2rem;
         display: inline-block;
       }
-      .openMenu{
-        a{
-          i{
+
+      .openMenu {
+        a {
+          i {
             font-size: 2rem;
             color: $sec-color;
           }
         }
       }
+
       .mainMenu {
         position: fixed;
         top: 0;
@@ -94,18 +268,22 @@ ul>li{
         background: $nav-down;
         transition: top 1s ease;
         z-index: 10;
+
         a {
           color: $sec-color;
         }
-        .mainMenu-search, .mainMenu-cart{
+
+        .mainMenu-search,
+        .mainMenu-cart {
           display: none;
         }
-        .closeMenu{
+
+        .closeMenu {
           display: block;
           position: absolute;
           top: 1.25rem;
           right: 1.25rem;
-          color:$sec-color;
+          color: $sec-color;
           font-size: 1.7rem;
           cursor: pointer;
         }
@@ -114,188 +292,50 @@ ul>li{
   }
 }
 
- /* Product-Section*/ 
+/* imac-section */
 
-.product-section{
-    height: 500px;
-    background-image: url(/asset/heros/hero_bts__bcuslanw39xe_small_2x.jpg);
-    background-size: cover;
-    background-position: center;
-    margin: 0 auto;
-    .product-section-buy{
-      padding-top: 2.7rem;
-      h2{
-          font-size: 1.9rem;
-          font-weight: 600;
-          letter-spacing: 0.0001em;
-          word-spacing: 0.0001em;
-          padding: 0.4rem 2.2rem;
-          width: 350px;
-          text-align: center;
-          margin: 0 auto;
-          line-height: 2.6rem;
-      }
-      a{
-          display: flex;
-          gap: 12px;
-          align-items: center;
-          justify-content: center;
-      }
-  }
-}
-
-/* Iphone section*/ 
-
-.section-iphone{
-  height: 500px;
-  background-image: url(/asset/heros/iphone_12_updated__jepm2xpxncuy_small_2x.jpg);
-  background-position: bottom;
-  background-size: cover;
-  .iphone{
-    margin: 0 auto;
-    padding-top: 2rem;
-    h2{
-      font-size: 1.9rem;
-      font-weight: 600;
-      letter-spacing: 0.0001em;
-      word-spacing: 0.0001em;
-      width: 350px;
-      text-align: center;
-      margin: 0 auto;
-      line-height: 2rem;
-    }
-    span{
-      font-size: 1.3rem;
-      font-weight: 200;
-      letter-spacing: normal;
-      padding: 0.8rem 0 ;
-      margin: 0 auto;
-      text-align: center;
-      display: block;
-    }
-    p{
-      font-size: 0.8rem;
-      line-height: 1rem;
-      padding: 0.5rem 0.5rem;
-      text-align: center;
-      width: 100%;
-      max-width: 200px;
-      margin: 0 auto;
-      letter-spacing: 0.01em;
-    }
-    .anchors{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      a{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.75rem;
-        font-size: 0.9rem;
-      }
-    }
-  }
-}
-/* Iphone-pro-section*/ 
-
-.section-iphone-pro{
-  height: 500px;
-  background-image: url(/asset/heros/iphone_12_pro_us__e5oyysg4k0ya_small_2x.jpg);
-  background-position: bottom;
-  background-size: cover;
-  .iphone-pro{
-    margin: 0 auto;
-    padding-top: 2rem;
-    h2{
-      font-size: 1.9rem;
-      font-weight: 600;
-      letter-spacing: 0.0001em;
-      word-spacing: 0.0001em;
-      width: 350px;
-      text-align: center;
-      margin: 0 auto;
-      line-height: 2rem;
-      color: $sec-color;
-    }
-    span{
-      font-size: 1.3rem;
-      font-weight: 200;
-      letter-spacing: normal;
-      padding: 0.5rem 0;
-      margin: 0 auto;
-      text-align: center;
-      display: block;
-      color: $sec-color;
-    }
-    p{
-      font-size: 0.8rem;
-      line-height: 1rem;
-      font-weight: 400;
-      padding: 0.5rem 0.5rem;
-      text-align: center;
-      width: 100%;
-      max-width: 200px;
-      margin: 0 auto;
-      letter-spacing: 0.02em;
-      color: $sec-color-grey;
-    }
-    .anchors{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      a{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.75rem;
-        font-size: 1rem;
-      }
-    }
-  }
-}
-
-
-/* imac-section */ 
-
-.imac-section{
-  .row{
-    .left-wrapper{
+.imac-section {
+  .row {
+    .left-wrapper {
       padding-top: 1.5rem;
       height: 500px;
       background-image: url(/asset/promos/promo_imac__crg641tip4q6_small.jpg);
       background-size: cover;
       background-position: bottom;
-      .anchors{
+
+      .anchors {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        a{
+
+        a {
           display: flex;
           align-items: center;
           justify-content: center;
           gap: 0.75rem;
           font-size: 0.9rem;
         }
-      }      
+      }
     }
-    .right-wrapper{
+
+    .right-wrapper {
       height: 500px;
       background-image: url(/asset/promos/promo_watch_series_6_lte__f8lrasjnry2y_small.jpg);
       background-size: cover;
       background-position: bottom;
-      span{
+
+      span {
         color: $sec-color;
       }
-      .anchors{
+
+      .anchors {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        a{
+
+        a {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -307,25 +347,28 @@ ul>li{
   }
 }
 
-.ipad-section{
-  .row{
-    .left-wrapper{
+.ipad-section {
+  .row {
+    .left-wrapper {
       padding-top: 1.5rem;
       height: 500px;
       background-image: url(/asset/promos/promo_bts__bg3cb4kaoqoi_small.jpg);
       background-size: cover;
       background-position: bottom;
-      h3{
+
+      h3 {
         width: 300px;
         margin: 1rem auto;
         line-height: 2.2rem;
       }
-      .anchors{
+
+      .anchors {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        a{
+
+        a {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -334,25 +377,29 @@ ul>li{
         }
       }
     }
-    .right-wrapper{
+
+    .right-wrapper {
       padding-top: 1.5rem;
       height: 500px;
       background-image: url(/asset/promos/promo_tile_taa_product_skills__4unq1d3k5iai_small.jpg);
       background-size: cover;
       background-position: bottom;
-      .span-width{
+
+      .span-width {
         width: 300px;
         font-weight: 400;
         font-size: 1.3rem;
         margin: 0.5rem auto;
         line-height: 1.4rem;
       }
-      .anchors{
+
+      .anchors {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        a{
+
+        a {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -364,28 +411,31 @@ ul>li{
   }
 }
 
-/* apple-music section*/ 
-.apple-music{
-  .row{
-    .left-wrapper{
+/* apple-music section */
+.apple-music {
+  .row {
+    .left-wrapper {
       padding-top: 1.5rem;
       height: 500px;
       background-image: url(/asset/promos/promo_spatial_audio_taylor_swift__d0ewry6j28qe_small.jpg);
       background-size: cover;
       background-position: bottom;
-      h3{
+
+      h3 {
         width: 300px;
         margin: 0.8rem auto;
         line-height: 2rem;
         font-weight: 400;
         color: $sec-color;
       }
-      .anchors{
+
+      .anchors {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        a{
+
+        a {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -395,26 +445,30 @@ ul>li{
         }
       }
     }
-    .right-wrapper{
+
+    .right-wrapper {
       padding-top: 1.5rem;
       height: 500px;
       background-image: url(/asset/promos/promo_ted_lasso_s2__gfwcnecoabu6_small.jpg);
       background-size: cover;
       background-position: bottom;
-      .span-width{
+
+      .span-width {
         width: 300px;
         font-weight: 400;
         font-size: 1.3rem;
         margin: 0.5rem auto;
         line-height: 1.4rem;
       }
-      .anchors{
+
+      .anchors {
         display: flex;
-        flex-direction:column ;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        a{
+
+        a {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -427,52 +481,44 @@ ul>li{
   }
 }
 
-.grid{
+.grid {
   display: grid;
   row-gap: 1rem;
   column-gap: 1rem;
 }
 
-footer{
-  .copyright-container{
-    display: flex;
-    padding: 1rem 0;
-    ul{
-      li{
-        a{
-          color: $nav-up;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 768px){
-  .header{
-    .nav{
-      .nav-down{
+@media only screen and (min-width: 768px) {
+  .header {
+    .nav {
+      .nav-down {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .nav-logo{
+
+        .nav-logo {
           display: block;
           padding-left: 1rem;
         }
-        .openMenu{
+
+        .openMenu {
           display: none;
         }
-        .mainMenu{
+
+        .mainMenu {
           position: relative;
           width: 80%;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          padding: 0.5rem ;
+          padding: 0.5rem;
           height: unset;
-          .mainMenu-search,.mainMenu-cart{
+
+          .mainMenu-search,
+          .mainMenu-cart {
             display: inline-block;
           }
-          .closeMenu{
+
+          .closeMenu {
             display: none;
           }
         }
@@ -480,24 +526,25 @@ footer{
     }
   }
 
-  .product-section{
+  .product-section {
     height: 500px;
     background-image: url(/asset/heros/hero_bts__bcuslanw39xe_large.jpg);
     background-size: cover;
     background-position: center;
     margin: 0 auto;
   }
-  .section-iphone{
+
+  .section-iphone {
     height: 500px;
     background-image: url(/asset/heros/iphone_12_updated__jepm2xpxncuy_large.jpg);
     background-position: bottom;
     background-size: cover;
   }
-  
-.section-iphone-pro{
-  height: 500px;
-  background-image: url(/asset/heros/iphone_12_pro_us__e5oyysg4k0ya_large.jpg);
-  background-position: bottom;
-  background-size: cover;
-}
+
+  .section-iphone-pro {
+    height: 500px;
+    background-image: url(/asset/heros/iphone_12_pro_us__e5oyysg4k0ya_large.jpg);
+    background-position: bottom;
+    background-size: cover;
+  }
 }

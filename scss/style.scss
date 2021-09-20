@@ -45,6 +45,7 @@ ul>li{
     top: 0;
     width: 100%;
     display: block;
+    z-index: 20;
     .nav-up {
       background-color: $nav-up;
       display: flex;
@@ -58,39 +59,56 @@ ul>li{
         color: $sec-color;
       }
     }
-
-    .nav-middle {
-      background-color: $nav-down;
+    .nav-down {
       display: flex;
-      align-items: center;
-      gap: 14rem;
-      padding: 0.5rem 0 0.5rem 1.5rem;
-
-      a {
-        color: $sec-color;
-
-        .fa-bars {
-          font-size: 24px;
-          opacity: 0.8;
-        }
-
-        img {
-          width: 24px;
+      justify-content: space-between;
+      background-color: $nav-down;
+      padding: 0.5rem 1.5rem;
+      .nav-logo{
+        width: 2rem;
+        display: inline-block;
+      }
+      .openMenu{
+        a{
+          i{
+            font-size: 2rem;
+            color: $sec-color;
+          }
         }
       }
-    }
-
-    .nav-down {
-      background-color: $nav-down;
-      display: none;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.5rem 6rem 0.5rem 6rem;
-      font-size: 1rem;
-      font-weight: 400;
-
-      a {
-        color: $sec-color;
+      .mainMenu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100vh;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: left;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 5rem;
+        background: $nav-down;
+        transition: top 1s ease;
+        z-index: 10;
+        a {
+          color: $sec-color;
+        }
+        .mainMenu-search, .mainMenu-cart{
+          display: none;
+        }
+        .closeMenu{
+          display: block;
+          position: absolute;
+          top: 1.25rem;
+          right: 1.25rem;
+          color:$sec-color;
+          font-size: 1.7rem;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -415,14 +433,49 @@ ul>li{
   column-gap: 1rem;
 }
 
+footer{
+  .copyright-container{
+    display: flex;
+    padding: 1rem 0;
+    ul{
+      li{
+        a{
+          color: $nav-up;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 768px){
   .header{
     .nav{
-      .nav-middle{
-        display: none;
-      }
       .nav-down{
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .nav-logo{
+          display: block;
+          padding-left: 1rem;
+        }
+        .openMenu{
+          display: none;
+        }
+        .mainMenu{
+          position: relative;
+          width: 80%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 0.5rem ;
+          height: unset;
+          .mainMenu-search,.mainMenu-cart{
+            display: inline-block;
+          }
+          .closeMenu{
+            display: none;
+          }
+        }
       }
     }
   }
@@ -446,22 +499,5 @@ ul>li{
   background-image: url(/asset/heros/iphone_12_pro_us__e5oyysg4k0ya_large.jpg);
   background-position: bottom;
   background-size: cover;
-}
-.footer{
-  .copyright-container{
-    display: inline-flex;
-    background-color: $sec-color-grey;
-    padding: 1rem 0;
-    p{
-      color: $sec-color;
-    }
-    ul{
-      li{
-        a{
-          color: $sec-color;
-        }
-      }
-    }
-  }
 }
 }

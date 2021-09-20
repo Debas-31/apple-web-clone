@@ -10680,6 +10680,7 @@ ul > li {
   top: 0;
   width: 100%;
   display: block;
+  z-index: 20;
 }
 
 .header .nav .nav-up {
@@ -10696,39 +10697,59 @@ ul > li {
   color: #fff;
 }
 
-.header .nav .nav-middle {
-  background-color: #000;
+.header .nav .nav-down {
   display: flex;
-  align-items: center;
-  gap: 14rem;
-  padding: 0.5rem 0 0.5rem 1.5rem;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 0.5rem 1.5rem;
 }
 
-.header .nav .nav-middle a {
+.header .nav .nav-down .nav-logo {
+  width: 2rem;
+  display: inline-block;
+}
+
+.header .nav .nav-down .openMenu a i {
+  font-size: 2rem;
   color: #fff;
 }
 
-.header .nav .nav-middle a .fa-bars {
-  font-size: 24px;
-  opacity: 0.8;
-}
-
-.header .nav .nav-middle a img {
-  width: 24px;
-}
-
-.header .nav .nav-down {
-  background-color: #000;
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 6rem 0.5rem 6rem;
+.header .nav .nav-down .mainMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
   font-size: 1rem;
   font-weight: 400;
+  text-align: left;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5rem;
+  background: #000;
+  transition: top 1s ease;
+  z-index: 10;
 }
 
-.header .nav .nav-down a {
+.header .nav .nav-down .mainMenu a {
   color: #fff;
+}
+
+.header .nav .nav-down .mainMenu .mainMenu-search, .header .nav .nav-down .mainMenu .mainMenu-cart {
+  display: none;
+}
+
+.header .nav .nav-down .mainMenu .closeMenu {
+  display: block;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  color: #fff;
+  font-size: 1.7rem;
+  cursor: pointer;
 }
 
 /* Product-Section*/
@@ -11069,12 +11090,42 @@ ul > li {
   column-gap: 1rem;
 }
 
+footer .copyright-container {
+  display: flex;
+  padding: 1rem 0;
+}
+
+footer .copyright-container ul li a {
+  color: #333;
+}
+
 @media only screen and (min-width: 768px) {
-  .header .nav .nav-middle {
-    display: none;
-  }
   .header .nav .nav-down {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header .nav .nav-down .nav-logo {
+    display: block;
+    padding-left: 1rem;
+  }
+  .header .nav .nav-down .openMenu {
+    display: none;
+  }
+  .header .nav .nav-down .mainMenu {
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+    height: unset;
+  }
+  .header .nav .nav-down .mainMenu .mainMenu-search, .header .nav .nav-down .mainMenu .mainMenu-cart {
+    display: inline-block;
+  }
+  .header .nav .nav-down .mainMenu .closeMenu {
+    display: none;
   }
   .product-section {
     height: 500px;
@@ -11094,16 +11145,5 @@ ul > li {
     background-image: url(/asset/heros/iphone_12_pro_us__e5oyysg4k0ya_large.jpg);
     background-position: bottom;
     background-size: cover;
-  }
-  .footer .copyright-container {
-    display: inline-flex;
-    background-color: #86868b;
-    padding: 1rem 0;
-  }
-  .footer .copyright-container p {
-    color: #fff;
-  }
-  .footer .copyright-container ul li a {
-    color: #fff;
   }
 }

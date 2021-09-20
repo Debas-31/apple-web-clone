@@ -17,21 +17,23 @@
                 <img src="/asset/icons/vertical-line.png" alt="vertical line image ">
                 <a href="#">Exit</a>
             </div>
-            <div class="nav-middle">
-                <a href="#"><i class="fas fa-bars fa-2x"></i></a>
-                <a href="#"><img src="/asset/icons/logo.png" alt="ipone logo"></a>
-            </div>
             <div class="nav-down">
-                <a href="#"><img src="/asset/icons/logo.png" alt="ipone logo"></a>
-                <a href="#mac">Mac</a>
-                <a href="#iphone">iphone</a>
-                <a href="#ipad">ipad</a>
-                <a href="#watch">watch</a>
-                <a href="#tv">tv</a>
-                <a href="#music">music</a>
-                <a href="#">support</a>
-                <a href="#"><img src="/asset/icons/search-icon.png" alt="search icon"></a>
-                <a href="#"><img src="/asset/icons/cart.png" alt="cart icon"></a>
+                <div class="nav-logo">
+                    <a href="#"><img src="/asset/icons/logo.png" alt="ipone logo"></a>
+                </div>
+                <div class="openMenu"> <a href="#"><i class="fas fa-bars fa-2x open-closed"></i></a></div>
+                <div class="mainMenu">
+                    <a href="#mac">Mac</a>
+                    <a href="#iphone">iphone</a>
+                    <a href="#ipad">ipad</a>
+                    <a href="#watch">watch</a>
+                    <a href="#tv">tv</a>
+                    <a href="#music">music</a>
+                    <a href="#">support</a>
+                    <a class="mainMenu-search" href="#"><img src="/asset/icons/search-icon.png" alt="search icon"></a>
+                    <a class="mainMenu-cart" href="#"><img src="/asset/icons/cart.png" alt="cart icon"></a>
+                    <div class="closeMenu"><i class="fas fa-times"></i></div>
+                </div>
             </div>
         </nav>
         <div class="shop">
@@ -157,7 +159,7 @@
           <p class="text-center">
             Copyright © 2019 Apple Inc. All rights reserved.
           </p>
-          <ul class="d-flex justify-content-between px-1">
+          <ul class="d-flex justify-content-between px-1 text-center">
             <li><a href="">Privacy Policy</a></li>
             <li><a href="#">Terms of Use</a></li>
             <li><a href="#">Sales and Refunds</a></li>
@@ -166,5 +168,6 @@
           </ul>
       </div>
     </footer>
+    <script src="/js/app.js"></script>
 </body>
 </html>

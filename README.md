@@ -12,7 +12,7 @@
 
 ### Live Demo
 
-[Visit the Live Demo](https://debas-31.github.io/my-portfolio/)
+[Visit the Live Demo](https://debas-31.github.io/apple-web-clone/)
 
 
 ### Authors
@@ -27,7 +27,7 @@
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Debas-31/my-portfolio/issues).
+Feel free to check the [issues page](https://github.com/Debas-31/apple-web-clone/issues).
 
 ### Show your support
 

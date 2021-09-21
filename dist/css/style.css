@@ -10671,7 +10671,7 @@ footer .copyright-container ul li a {
 /* Product-Section */
 .product-section {
   height: 500px;
-  background-image: url("/asset/heros/hero_bts__bcuslanw39xe_small_2x.jpg");
+  background-image: url("../asset/heros/hero_bts__bcuslanw39xe_small_2x.jpg");
   background-size: cover;
   background-position: center;
   margin: 0 auto;
@@ -10703,7 +10703,7 @@ footer .copyright-container ul li a {
 /* Iphone-pro-section */
 .section-iphone-pro {
   height: 500px;
-  background-image: url("/asset/heros/iphone_12_pro_us__e5oyysg4k0ya_small_2x.jpg");
+  background-image: url("../asset/heros/iphone_12_pro_us__e5oyysg4k0ya_small_2x.jpg");
   background-position: bottom;
   background-size: cover;
 }
@@ -10767,7 +10767,7 @@ footer .copyright-container ul li a {
 /* Iphone section */
 .section-iphone {
   height: 500px;
-  background-image: url("/asset/heros/iphone_12_updated__jepm2xpxncuy_small_2x.jpg");
+  background-image: url("../asset/heros/iphone_12_updated__jepm2xpxncuy_small_2x.jpg");
   background-position: bottom;
   background-size: cover;
 }
@@ -10916,7 +10916,7 @@ footer .copyright-container ul li a {
 .imac-section .row .left-wrapper {
   padding-top: 1.5rem;
   height: 500px;
-  background-image: url("/asset/promos/promo_imac__crg641tip4q6_small.jpg");
+  background-image: url("../asset/promos/promo_imac__crg641tip4q6_small.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -10938,7 +10938,7 @@ footer .copyright-container ul li a {
 
 .imac-section .row .right-wrapper {
   height: 500px;
-  background-image: url("/asset/promos/promo_watch_series_6_lte__f8lrasjnry2y_small.jpg");
+  background-image: url("../asset/promos/promo_watch_series_6_lte__f8lrasjnry2y_small.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -10965,7 +10965,7 @@ footer .copyright-container ul li a {
 .ipad-section .row .left-wrapper {
   padding-top: 1.5rem;
   height: 500px;
-  background-image: url("/asset/promos/promo_bts__bg3cb4kaoqoi_small.jpg");
+  background-image: url("../asset/promos/promo_bts__bg3cb4kaoqoi_small.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -10994,7 +10994,7 @@ footer .copyright-container ul li a {
 .ipad-section .row .right-wrapper {
   padding-top: 1.5rem;
   height: 500px;
-  background-image: url("/asset/promos/promo_tile_taa_product_skills__4unq1d3k5iai_small.jpg");
+  background-image: url("../asset/promos/promo_tile_taa_product_skills__4unq1d3k5iai_small.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -11026,7 +11026,7 @@ footer .copyright-container ul li a {
 .apple-music .row .left-wrapper {
   padding-top: 1.5rem;
   height: 500px;
-  background-image: url("/asset/promos/promo_spatial_audio_taylor_swift__d0ewry6j28qe_small.jpg");
+  background-image: url("../asset/promos/promo_spatial_audio_taylor_swift__d0ewry6j28qe_small.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -11058,7 +11058,7 @@ footer .copyright-container ul li a {
 .apple-music .row .right-wrapper {
   padding-top: 1.5rem;
   height: 500px;
-  background-image: url("/asset/promos/promo_ted_lasso_s2__gfwcnecoabu6_small.jpg");
+  background-image: url("../asset/promos/promo_ted_lasso_s2__gfwcnecoabu6_small.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -11125,20 +11125,20 @@ footer .copyright-container ul li a {
   }
   .product-section {
     height: 500px;
-    background-image: url("/asset/heros/hero_bts__bcuslanw39xe_large.jpg");
+    background-image: url("../asset/heros/hero_bts__bcuslanw39xe_large.jpg");
     background-size: cover;
     background-position: center;
     margin: 0 auto;
   }
   .section-iphone {
     height: 500px;
-    background-image: url("/asset/heros/iphone_12_updated__jepm2xpxncuy_large.jpg");
+    background-image: url("../asset/heros/iphone_12_updated__jepm2xpxncuy_large.jpg");
     background-position: bottom;
     background-size: cover;
   }
   .section-iphone-pro {
     height: 500px;
-    background-image: url("/asset/heros/iphone_12_pro_us__e5oyysg4k0ya_large.jpg");
+    background-image: url("../asset/heros/iphone_12_pro_us__e5oyysg4k0ya_large.jpg");
     background-position: bottom;
     background-size: cover;
   }

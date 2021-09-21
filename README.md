@@ -1,9 +1,9 @@
 # apple-web-clone
 >This project is a clone of one of the apple's web pages. In this project i used different front end  frame work,tools and language such as sass,bootsrap, linters,flex and grid layout.
 ### mobile 
-![screenshot](./asset/Screen-Shoot/mobile-screen-shoot-mobile.png)
+![screenshot](./dist/asset/Screen-Shoot/mobile-screen-shoot-mobile.png)
 ### Desktop
-![screenshot](./asset/Screen-Shoot/Desktop-screen-shoot.png)
+![screenshot](./dist/asset/Screen-Shoot/Desktop-screen-shoot.png)
 ### Built With
 
 - HTML5
